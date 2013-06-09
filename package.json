@@ -1,7 +1,7 @@
 {
   "name": "livejournal",
   "version": "0.0.1",
-  "description": "",
+  "description": "Tools to scrape LiveJournal for data",
   "keywords": ["livejournal", "blog"],
   "author": "Artem Tyurin <artem.tyurin@gmail.com>",
   "repository": {
