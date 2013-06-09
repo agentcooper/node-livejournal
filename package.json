@@ -1,0 +1,17 @@
+{
+  "name": "livejournal",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": ["livejournal", "blog"],
+  "author": "Artem Tyurin <artem.tyurin@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/agentcooper/node-livejournal.git"
+  },
+  "dependencies": {
+    "cheerio": ">=0.11.0",
+    "request": ">=2.20.0",
+    "xml2js": ">=0.2.7"
+  },
+  "main": "index"
+}
