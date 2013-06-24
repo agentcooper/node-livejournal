@@ -13,6 +13,12 @@ LJ = xmlrpc.createClient({
   port: 80
 });
 
+LJ.Deserializer.prototype.endBase64 = function(data) {
+  var buffer = new Buffer(data, 'base64');
+  this.push(String(buffer));
+  this.value = false;
+};
+
 var methods = [
   'checkfriends',
   'consolecommand',

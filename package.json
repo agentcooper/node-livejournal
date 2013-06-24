@@ -9,7 +9,7 @@
     "url": "git://github.com/agentcooper/node-livejournal.git"
   },
   "dependencies": {
-    "xmlrpc": ">=1.1.0"
+    "xmlrpc": "git://github.com/agentcooper/node-xmlrpc.git"
   },
   "main": "index"
 }
