@@ -1,9 +1,21 @@
-## Tools to scrape LiveJournal for data
+## LiveJournal XMLRPC for Node
 
 `npm install livejournal`
 
-- This is not an API, some methods work by parsing html
+### Docs
 
-- See `example.js` for examples
+* http://wh.lj.ru/s2/developers/f/LiveJournal_XML-RPC_Specification_(EN).pdf
+* http://www.livejournal.com/doc/server/ljp.csp.xml-rpc.protocol.html
 
-- All methods use standart node callback format
+### Example
+
+```javascript
+LiveJournal.RPC.getevents({
+  journal: 'brad',
+  auth_method: 'noauth',
+  selecttype: 'lastn',
+  howmany: 20
+}, function(err, value) {
+  console.log(value.events);
+});
+```
