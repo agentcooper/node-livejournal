@@ -1,6 +1,6 @@
 {
   "name": "livejournal",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "LiveJournal XMLRPC",
   "keywords": ["livejournal", "blog"],
   "author": "Artem Tyurin <artem.tyurin@gmail.com>",
