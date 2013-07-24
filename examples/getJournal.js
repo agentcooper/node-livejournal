@@ -1,4 +1,4 @@
-var LiveJournal = require('./');
+var LiveJournal = require('../');
 
 LiveJournal.RPC.getevents({
   journal: 'brad',
