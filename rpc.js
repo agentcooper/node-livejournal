@@ -38,7 +38,8 @@ var methods = [
   'sessiongenerate',
   'syncitems',
   'getfriendspage',
-  'getcomments'
+  'getcomments',
+  'addcomment'
 ];
 
 var RPC = {};
