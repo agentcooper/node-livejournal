@@ -1,5 +1,11 @@
 var RPC = require('./rpc');
 
+var rxLink = [
+  /([0-9a-zA-Z-_]+)\.livejournal\.com\/([0-9]+)\.html/,
+  /m\.livejournal\.com\/read\/[a-z]+\/([0-9a-zA-Z_-]+)\/(\d+)/,
+  /users\.livejournal\.com\/([0-9a-zA-Z-_]+)\/([0-9]+).html/
+];
+
 function _groupBy(arr, amount) {
   var result = [], offset = 0;
 
@@ -39,8 +45,21 @@ function getFBStats(urls, callback) {
   });
 }
 
+function parseLink(url) {
+  for (var i = 0, match; i < rxLink.length; i++) {
+    match = url.match(rxLink[i]);
+
+    if (match && match.length === 3) {
+      return { journal: match[1], postId: match[2] };
+    }
+  }
+
+  return null;
+}
+
 module.exports = {
   getFBStats: getFBStats,
+  parseLink: parseLink,
 
   RPC: RPC
 };

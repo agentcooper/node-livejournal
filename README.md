@@ -30,3 +30,10 @@ LiveJournal.RPC.getevents({
   console.log(post.events[0]);
 });
 ```
+
+## Tests
+
+```
+npm install jasmine-node -g
+jasmine-node spec/
+```
