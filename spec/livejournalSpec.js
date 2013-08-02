@@ -43,6 +43,10 @@ describe('LiveJournal', function() {
       expect(
         LiveJournal.parseLink('http://livejournal.com')
       ).toEqual(null);
+
+      expect(
+        LiveJournal.parseLink(null)
+      ).toEqual(null);
     });
 
   });

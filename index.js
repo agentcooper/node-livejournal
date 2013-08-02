@@ -46,6 +46,10 @@ function getFBStats(urls, callback) {
 }
 
 function parseLink(url) {
+  if (!url) {
+    return null;
+  }
+
   for (var i = 0, match; i < rxLink.length; i++) {
     match = url.match(rxLink[i]);
 
