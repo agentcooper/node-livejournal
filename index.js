@@ -1,3 +1,5 @@
+var request = require('request');
+
 var RPC = require('./rpc');
 
 var rxLink = [
