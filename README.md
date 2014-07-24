@@ -4,8 +4,15 @@
 
 ### Docs
 
+## XMLRPC
+
 * http://wh.lj.ru/s2/developers/f/LiveJournal_XML-RPC_Specification_(EN).pdf
 * http://www.livejournal.com/doc/server/ljp.csp.xml-rpc.protocol.html
+
+## Other
+
+* http://www.livejournal.com/developer/
+* http://lj-dev.livejournal.com/
 
 ### Example
 
