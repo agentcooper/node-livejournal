@@ -2,6 +2,8 @@ var request = require('request');
 
 var RPC = require('./rpc');
 
+var API = require('./api');
+
 var rxLink = [
   /([0-9a-zA-Z-_]+)\.livejournal\.com\/([0-9]+)\.html/,
   /m\.livejournal\.com\/read\/[a-z]+\/([0-9a-zA-Z_-]+)\/(\d+)/,
@@ -67,5 +69,7 @@ module.exports = {
   getFBStats: getFBStats,
   parseLink: parseLink,
 
-  RPC: RPC
+  RPC: RPC,
+
+  API: API
 };
