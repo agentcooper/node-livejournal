@@ -44,6 +44,10 @@ var methods = [
 
 var RPC = {};
 
+RPC.setAuth = function(auth) {
+  LJ.options.headers['Authorization'] = auth;
+};
+
 methods.forEach(function(method) {
   RPC[method] = function(params, callback) {
 
