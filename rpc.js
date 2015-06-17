@@ -9,7 +9,7 @@
 
 var xmlrpc = require('xmlrpc');
 
-LJ = xmlrpc.createClient({
+var LJ = xmlrpc.createClient({
   host: 'www.livejournal.com',
   path: '/interface/xmlrpc',
   port: 80
