@@ -5,10 +5,12 @@
  * http://www.livejournal.com/doc/server/ljp.csp.xml-rpc.protocol.html
  */
 
+'use strict';
+
 var xmlrpc = require('xmlrpc');
 
 LJ = xmlrpc.createClient({
-  host: 'livejournal.com',
+  host: 'www.livejournal.com',
   path: '/interface/xmlrpc',
   port: 80
 });
@@ -56,7 +58,7 @@ methods.forEach(function(method) {
     LJ.methodCall('LJ.XMLRPC.' + method, [params], function(err, value) {
       callback(err, value);
     });
-  }
+  };
 });
 
 module.exports = RPC;
