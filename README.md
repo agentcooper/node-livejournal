@@ -37,39 +37,36 @@ LiveJournal.RPC.getevents({
 
 ## JSONRPC
 
-There is no public description of LiveJournal JSON RPC methods, but you can check `Site.rpc.public` on `http://livejournal.com`. Because the data is stored on CDN, you can access the data from anywhere.
+There is no official public description of LiveJournal JSON RPC methods, but you can check `Site.rpc.public` on `http://livejournal.com`. Because the data is stored on CDN, you can access the data from anywhere.
 
-Those are current ones:
+Those are current ones (badly documented, contributions are welcome):
 
-* `discovery.author_posts`
-* `comment.get_thread` -- get comments thread
-  
-  ```
-  Params:
-  journal -- Journal username
-  itemid -- Post id
-  ```
-
-* `latest.get_entries`
-
-  ```
-  first_timepost
-  ```
-
-* `browse.get_posts`
-* `gifts.get_gifts_categories`
-* `gifts.get_all_gifts`
-* `homepage.get_categories`
-* `discovery.suggest`
-* `sitemessage.get_message`
-* `discovery.get_categories`
-* `browse.get_categories`
-* `writers_block.get_list`
-* `discovery.today`
-* `discovery.get_feed`
-* `discovery.get_item`
-* `homepage.get_rating`
-* `browse.get_communities`
+##### `discovery.author_posts`
+##### `comment.get_thread` -- get comments thread
+```
+Params:
+journal -- Journal username
+itemid -- Post id
+```
+##### `latest.get_entries`
+```
+Params:
+first_timepost
+```
+##### `browse.get_posts`
+##### `gifts.get_gifts_categories`
+##### `gifts.get_all_gifts`
+##### `homepage.get_categories`
+##### `discovery.suggest`
+##### `sitemessage.get_message`
+##### `discovery.get_categories`
+##### `browse.get_categories`
+##### `writers_block.get_list`
+##### `discovery.today`
+##### `discovery.get_feed`
+##### `discovery.get_item`
+##### `homepage.get_rating`
+##### `browse.get_communities`
 
 
 Examples
