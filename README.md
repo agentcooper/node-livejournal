@@ -42,13 +42,15 @@ There is no official public description of LiveJournal JSON RPC methods, but you
 Those are current ones (badly documented, contributions are welcome):
 
 ##### `discovery.author_posts`
-##### `comment.get_thread` -- get comments thread
+##### `comment.get_thread`
+Get comments thread
 ```
 Params:
 journal -- Journal username
 itemid -- Post id
 ```
 ##### `latest.get_entries`
+Get latest posts
 ```
 Params:
 first_timepost
