@@ -12,5 +12,14 @@ describe('LiveJournal.jsonRPC', function() {
             });
         }, 10000);
 
+        it('comment.get_thread', function(done) {
+            LiveJournal.jsonRPC.request('comment.get_thread', {
+                journal: 'tema',
+                itemid: '1987717'
+            }, function(err, res) {
+                expect(res.body.result.comments).toBeDefined();
+                done();
+            });
+        }, 10000);
     });
 });

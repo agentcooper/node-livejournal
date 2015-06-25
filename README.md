@@ -12,6 +12,7 @@ This package provides access to both XMLRPC and JSONRPC APIs for LiveJournal.
 Examples
 
 ```javascript
+// get posts inside the journal using XMLRPC
 LiveJournal.RPC.getevents({
   journal: 'brad',
   auth_method: 'noauth',
@@ -23,6 +24,7 @@ LiveJournal.RPC.getevents({
 ```
 
 ```javascript
+// get post content using XMLRPC
 LiveJournal.RPC.getevents({
   journal: 'brad',
   auth_method: 'noauth',
@@ -61,10 +63,21 @@ Those are current ones:
 Examples
 
 ```js
+// get latest posts using JSON RPC
 LiveJournal.jsonRPC.request('latest.get_entries', {
   first_timepost: 1435262400
 }, function(err, res) {
   console.log(res.body.result.params.recent);
+});
+```
+
+```js
+// get comments using JSON RPC
+LiveJournal.jsonRPC.request('comment.get_thread', {
+  journal: 'tema',
+  itemid: '1987717'
+}, function(err, res) {
+  console.log(res.body.result.comments)
 });
 ```
 
