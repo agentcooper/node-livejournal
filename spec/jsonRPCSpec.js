@@ -1,10 +1,10 @@
 var LiveJournal = require('../');
 
-describe('LiveJournal.jsonRPC', function() {
-    describe('LiveJournal.jsonRPC.request', function() {
+describe('LiveJournal.jsonrpc', function() {
+    describe('LiveJournal.jsonrpc.request', function() {
 
         it('latest.get_entries', function(done) {
-            LiveJournal.jsonRPC.request('latest.get_entries', {
+            LiveJournal.jsonrpc.request('latest.get_entries', {
                 first_timepost: 1435262400
             }, function(err, res) {
                 expect(res.body.result.params.recent).toBeDefined();
@@ -13,7 +13,7 @@ describe('LiveJournal.jsonRPC', function() {
         }, 10000);
 
         it('comment.get_thread', function(done) {
-            LiveJournal.jsonRPC.request('comment.get_thread', {
+            LiveJournal.jsonrpc.request('comment.get_thread', {
                 journal: 'tema',
                 itemid: '1987717'
             }, function(err, res) {

@@ -15,7 +15,7 @@ Examples
 
 ```javascript
 // get posts inside the journal using XMLRPC
-LiveJournal.RPC.getevents({
+LiveJournal.xmlrpc.getevents({
   journal: 'brad',
   auth_method: 'noauth',
   selecttype: 'lastn',
@@ -27,7 +27,7 @@ LiveJournal.RPC.getevents({
 
 ```javascript
 // get post content using XMLRPC
-LiveJournal.RPC.getevents({
+LiveJournal.xmlrpc.getevents({
   journal: 'brad',
   auth_method: 'noauth',
   selecttype: 'one',
@@ -77,7 +77,7 @@ Examples
 
 ```js
 // get latest posts using JSON RPC
-LiveJournal.jsonRPC.request('latest.get_entries', {
+LiveJournal.jsonrpc.request('latest.get_entries', {
   first_timepost: 1435262400
 }, function(err, res) {
   console.log(res.body.result.params.recent);
@@ -86,7 +86,7 @@ LiveJournal.jsonRPC.request('latest.get_entries', {
 
 ```js
 // get comments using JSON RPC
-LiveJournal.jsonRPC.request('comment.get_thread', {
+LiveJournal.jsonrpc.request('comment.get_thread', {
   journal: 'tema',
   itemid: '1987717'
 }, function(err, res) {
@@ -94,7 +94,7 @@ LiveJournal.jsonRPC.request('comment.get_thread', {
 });
 ```
 
-You can access method list using `LiveJournal.jsonRPC.methods`.
+You can access method list using `LiveJournal.jsonrpc.methods`.
 
 ## Other docs and resources
 
