@@ -42,8 +42,16 @@ There is no public description of LiveJournal JSON RPC methods, but you can chec
 Those are current ones:
 
 * `discovery.author_posts`
-* `comment.get_thread`
+* `comment.get_thread` -- get comments thread
+  ```
+  Params:
+  journal -- Journal username
+  itemid -- Post id
+  ```
 * `latest.get_entries`
+  ```
+  first_timepost
+  ```
 * `browse.get_posts`
 * `gifts.get_gifts_categories`
 * `gifts.get_all_gifts`
