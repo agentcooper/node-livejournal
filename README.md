@@ -1,5 +1,7 @@
 ## LiveJournal API
 
+[![Build Status](https://travis-ci.org/agentcooper/node-livejournal.svg?branch=master)](https://travis-ci.org/agentcooper/node-livejournal)
+
 `npm install livejournal`
 
 This package provides access to both XMLRPC and JSONRPC APIs for LiveJournal.
