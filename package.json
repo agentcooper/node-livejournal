@@ -9,6 +9,9 @@
     "xmlrpc",
     "jsonrpc"
   ],
+  "scripts": {
+    "test": "jasmine"
+  },
   "author": "Artem Tyurin <artem.tyurin@gmail.com>",
   "repository": {
     "type": "git",
@@ -19,5 +22,8 @@
     "superagent": "^1.2.0",
     "xmlrpc": "git://github.com/agentcooper/node-xmlrpc.git"
   },
-  "main": "index"
+  "main": "index",
+  "devDependencies": {
+    "jasmine": "^2.3.1"
+  }
 }

@@ -102,6 +102,6 @@ You can access method list using `LiveJournal.jsonRPC.methods`.
 ## Tests
 
 ```
-npm install jasmine-node -g
-jasmine-node spec/
+npm install jasmine -g
+npm test
 ```
