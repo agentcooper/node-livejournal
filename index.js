@@ -2,6 +2,8 @@ var request = require('request');
 
 var RPC = require('./rpc');
 
+var jsonRPC = require('./jsonRPC');
+
 var API = require('./api');
 
 var rxLink = [
@@ -71,5 +73,7 @@ module.exports = {
 
   RPC: RPC,
 
-  API: API
+  API: API,
+
+  jsonRPC: jsonRPC
 };
