@@ -1,10 +1,13 @@
 {
   "name": "livejournal",
   "version": "0.0.8",
-  "description": "LiveJournal XMLRPC",
+  "description": "LiveJournal API",
   "keywords": [
     "livejournal",
-    "blog"
+    "blog",
+    "social",
+    "xmlrpc",
+    "jsonrpc"
   ],
   "author": "Artem Tyurin <artem.tyurin@gmail.com>",
   "repository": {

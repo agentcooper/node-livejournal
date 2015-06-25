@@ -1,6 +1,8 @@
-## LiveJournal XMLRPC for Node
+## LiveJournal API
 
 `npm install livejournal`
+
+This package provides access to both XMLRPC and JSONRPC APIs for LiveJournal.
 
 ## XMLRPC
 
