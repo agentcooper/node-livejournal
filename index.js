@@ -1,17 +1,9 @@
-var xmlrpc = require('./xmlrpc');
-
-var jsonrpc = require('./jsonrpc');
-
-var API = require('./api');
-
-var utils = require('./utils');
-
 module.exports = {
-  utils: utils,
+  utils: require('./lib/utils'),
   
-  API: API,
+  API: require('./lib/api'),
 
-  xmlrpc: xmlrpc,
+  xmlrpc: require('./lib/xmlrpc'),
   
-  jsonrpc: jsonrpc
+  jsonrpc: require('./lib/jsonrpc')
 };
