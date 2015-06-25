@@ -76,7 +76,7 @@ first_timepost
 Examples
 
 ```js
-// get latest posts using JSON RPC
+// get latest posts using JSONRPC
 LiveJournal.jsonrpc.request('latest.get_entries', {
   first_timepost: 1435262400
 }, function(err, res) {
@@ -85,7 +85,7 @@ LiveJournal.jsonrpc.request('latest.get_entries', {
 ```
 
 ```js
-// get comments using JSON RPC
+// get comments using JSONRPC
 LiveJournal.jsonrpc.request('comment.get_thread', {
   journal: 'tema',
   itemid: '1987717'
