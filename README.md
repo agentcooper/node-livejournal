@@ -96,10 +96,15 @@ LiveJournal.jsonrpc.request('comment.get_thread', {
 
 You can access method list using `LiveJournal.jsonrpc.methods`.
 
+## API
+
+LiveJournal.API is wrapper around some resources provided at http://www.livejournal.com/bots/
+
 ## Other docs and resources
 
 * http://www.livejournal.com/developer/
 * http://lj-dev.livejournal.com/
+* http://www.livejournal.com/bots/
 
 ## Tests
 

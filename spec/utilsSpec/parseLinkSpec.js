@@ -1,4 +1,4 @@
-var LiveJournal = require('../');
+var LiveJournal = require('../../');
 
 describe('LiveJournal.utils', function() {
 
