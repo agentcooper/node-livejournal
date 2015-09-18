@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "superagent": "^1.2.0",
-    "xmlrpc": "git@github.com:agentcooper/node-xmlrpc.git"
+    "xmlrpc": "https://github.com/agentcooper/node-xmlrpc.git"
   },
   "main": "index",
   "devDependencies": {
