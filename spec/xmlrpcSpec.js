@@ -27,5 +27,21 @@ describe('LiveJournal.xmlrpc', function() {
       });
     }, 10000);
 
+    it('should return post containing multiple languages', function(done) {
+      LiveJournal.xmlrpc.getevents({
+        journal: 'brad',
+        auth_method: 'noauth',
+        selecttype: 'one',
+        ditemid: '2351564'
+      }, function(err, post) {
+        expect(post.events[0]).toBeDefined();
+
+        expect(post.events[0].event.indexOf('Привет')).not.toBe(-1);
+        expect(post.events[0].event.indexOf('Soviet Russia')).not.toBe(-1);
+
+        done();
+      });
+    }, 10000);
+
   });
 });
